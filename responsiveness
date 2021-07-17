@@ -1,0 +1,174 @@
+/**********************/
+/*** RESPONSIVENESS ***/
+/**********************/
+/*** MAKE SITE WIDER ON SMALLER SCREENS ***/
+@media only screen and (max-width: 980px) {
+.et_pb_row {
+width: 95%; /*** you might need !important ***/
+}
+}
+
+
+/*tiny old phones*/
+@media only screen and (max-width: 360px) {
+	body .about-backstory .et_pb_column {
+	margin-bottom: 0px !important;
+	width: 75% !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h4 {
+		font-size:24px !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h5 {
+		font-size:20px !important;}
+
+body .tina_siamese_testimonial .student-testimonials .et_pb_slide {
+    background-color: #efefef !important;
+	padding: 0 !important;}
+	
+	body .freddie_blog_post_human_body_title h1.entry-title {
+		font-size: 22px !important;}
+		
+	body .freddie_blog_post_human_body_post_content .wp-caption p.wp-caption-text {
+		display: none;}
+}
+
+/*mobile & max-mobile*/
+@media only screen and (max-width: 765px) and (min-width: 375px){
+	
+	h1 {
+		font-size: 30px !important;
+		letter-spacing: -2px !important;}
+	
+	body .about-backstory .et_pb_column {
+	margin-bottom: 0px !important;
+	width: 75% !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h4 {
+		font-size:24px !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h5 {
+		font-size:20px !important;}
+	
+	body .freddie_stealin_video_content .et_pb_video .et_pb_video_overlay:before {
+    font-size: 12px !important;
+    margin-top: 41px !important;}
+	
+	body .freddie_blog_post_human_body_title h1.entry-title {
+    font-size: 22px !important;
+		letter-spacing: 0.3px !important;}
+	
+	body .freddie_blog_post_human_body_post_content .wp-caption p.wp-caption-text {
+		display: none;}
+
+}
+
+
+
+
+/*tablets*/
+@media only screen and (max-width: 980px) {
+	
+	.parahacks .et_parallax_bg {
+    background-position: center 0px!important;}
+	
+	body .freddie_song_for_lennon_content .et_pb_promo .et_pb_promo_description p {
+    font-family: 'FreightBigProBookItalic',serif !important;
+    font-weight: 400;
+    color: #38383b!important;
+    font-size: 22px;}
+	
+	.about-backstory .et_pb_column {
+	margin-bottom: 0px !important;
+		width: 47% !important;}
+	
+    .tina_sometimes_content .et_pb_promo .et_pb_promo_description h2 {
+        font-size:24px !important;}
+	
+	body .tina_sometimes_content .et_pb_promo .et_pb_promo_description h3 {
+        font-size:22px !important;}
+	
+		.freddie_make_things_cta .et_pb_column_2_3 {
+        padding-top: 30px !important;}
+	
+body .tina_siamese_testimonial .student-testimonials .et_pb_slide {
+    background-color: #efefef !important;
+	padding: 0 !important;}
+	
+	body .freddie_blog_post_human_body_post_content .wp-caption p.wp-caption-text {
+		display: none;}
+
+}
+
+
+/*ipad pro 12 inch + landscape ipads*/
+@media only screen and (max-width: 1025px) and (min-width: 835px) {
+	.home-cta .et_pb_blurb .et_pb_main_blurb_image .et_pb_image_wrap {
+		width: 100%;}
+	
+	
+	.mission-statement .et_pb_row {
+		width: 80% !important;
+	}
+	
+	.podcast-cta .et_pb_code {
+		right: -1vw;
+		top: 12vw;
+	}
+	.podcast-cta .et_pb_column_12 {
+		padding-top: 4vw;
+	}
+	
+	.podcast-cta h2 {
+		font-size: 24px !important;
+	}
+	
+	.podcast-cta p {
+		font-size: 15px;
+		line-height: 160%;
+	}
+	
+	.podcast-cta .birdandthorn p{
+		font-size: 96px !important;
+	}
+	
+	body .about-backstory .et_pb_column {
+		width: 47% !important;}
+	
+	body .tina_sometimes_content .et_pb_promo .et_pb_promo_description h3 {
+        font-size:22px !important;}
+	
+.ragnar_blog_ake .post-content p {
+    display: block;
+    height: 10em;
+    overflow: hidden;
+}
+	
+.ragnar_blog_ake .et_pb_post .post-meta a, .et_pb_portfolio_item .post-meta a {
+	font-size: 14px !important;}
+
+
+footer #instagram {
+	overflow: hidden;
+}
+}
+
+
+/*large laptops & desktop*/
+
+@media only screen and (max-width: 1390px) and (min-width: 981px) {
+body .freddie_sweet_lady_slider .et_pb_slider .et_pb_slide .et_pb_slide_description .et_pb_slide_title {
+    font-size: 24px !important;}
+	
+	.tina_sometimes_content .et_pb_promo .et_pb_promo_description h2 {
+        font-size: 24px !important;}
+	
+	.tina_sometimes_content .et_pb_promo .cta_content {
+    	margin-right: -48px !important;}
+	
+}
+
+@media only screen and (max-width: 1500px) {
+   body .freddie_blog_post_human_body_main_content_section.et_pb_section {
+        padding-top:15px !important;
+    }
+}
