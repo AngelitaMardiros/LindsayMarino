@@ -1,0 +1,78 @@
+<link rel="preconnect" href="https://www.facebook.com">
+<link rel="preconnect" href="https://connect.facebook.net">
+
+
+<script>
+jQuery(document).ready(function($) {
+    $('img[title]').each(function() { $(this).removeAttr('title'); });
+});
+</script>
+
+<script>
+	
+// Delay pixel fire by 5 seconds
+var seconds = 5;
+setTimeout(function() {
+  fbq('track', 'Lead');
+}, seconds * 1000);
+	
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1499005093748821');
+  fbq('track', "PageView");
+  </script>
+
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1499005093748821&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script>
+jQuery(document).ready(function() {
+setTimeout(function(){
+jQuery('.popup-link').click(function(){
+jQuery('.ragnar_popups_6').show();
+jQuery('.ragnar_popups_6 .et_pb_row').css('opacity', '1');
+});
+}, 3000);
+});
+</script>
+
+<script>
+jQuery(function($){
+    $('.et_pb_accordion .et_pb_toggle_open').addClass('et_pb_toggle_close').removeClass('et_pb_toggle_open');
+
+    $('.et_pb_accordion .et_pb_toggle').click(function() {
+      $this = $(this);
+      setTimeout(function(){
+         $this.closest('.et_pb_accordion').removeClass('et_pb_accordion_toggling');
+      },700);
+    });
+});
+</script>
+
+<script>
+jQuery(function($){
+  $('.et_pb_toggle_title').click(function(){
+    var $toggle = $(this).closest('.et_pb_toggle');
+    if (!$toggle.hasClass('et_pb_accordion_toggling')) {
+      var $accordion = $toggle.closest('.et_pb_accordion');
+      if ($toggle.hasClass('et_pb_toggle_open')) {
+        $accordion.addClass('et_pb_accordion_toggling');
+        $toggle.find('.et_pb_toggle_content').slideToggle(700, function() { 
+          $toggle.removeClass('et_pb_toggle_open').addClass('et_pb_toggle_close'); 
+					
+        });
+      }
+      setTimeout(function(){ 
+        $accordion.removeClass('et_pb_accordion_toggling'); 
+      }, 750);
+    }
+  });
+});
+</script>
+
