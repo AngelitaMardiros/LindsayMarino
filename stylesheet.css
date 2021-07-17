@@ -1,0 +1,1057 @@
+/***************/
+/*** FONTS  ****/
+/***************/
+@font-face {
+    font-family: 'FreightBigProBlackRegular';
+    src: url(/wp-content/themes/Divi_Child/fonts/FreightBigProBlackRegular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'FreightBigProBookItalic';
+    src: url(/wp-content/themes/Divi_Child/fonts/FreightBigProBookItalic.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url(/wp-content/themes/Divi_Child/fonts/ProximaNovaRegular.woff2) format('woff2');
+}
+
+
+h1 {
+	font-family: 'FreightBigProBlackRegular', serif !important;
+	font-weight: 900;
+	font-style: normal;
+}
+
+h2 {
+	font-family: 'FreightBigProBlackRegular',serif !important;
+	font-weight: 900;
+	font-style: normal;
+}
+
+h3 {
+	font-family: 'FreightBigProBookItalic' !important;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 0.3px;
+	line-height: 120%;
+	font-style: normal;
+}
+
+h4 {
+	font-family: 'FreightBigProBlackRegular' serif !important;
+	font-weight: 500;
+}
+
+body {
+	font-family: 'ProximaNovaRegular', sans-serif !important;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/***************/
+/*** BUTTONS ***/
+/***************/
+
+/*primary button wiht arrow - marino*/
+.et_pb_button_module_wrapper .et_pb_button.freddie_button_good_old .button_bg {
+    background-color: #ffffff !important;
+}
+
+.et_pb_button_module_wrapper .et_pb_button.freddie_button_good_old .button_arrow:before {
+    color: #383838 !important;
+}
+
+/*scroll button on about page*/
+.et_pb_button_module_wrapper .et_pb_button.freddie_button_been_saved .circle__background {
+    stroke: rgba(146,221,219,0.3) !important;
+}
+
+.et_pb_button_module_wrapper .et_pb_button.freddie_button_been_saved .circle__progress {
+    stroke: #92DDDB !important;
+}
+
+
+/********************/
+/*** NAVIGATION  ****/
+/********************/
+/*adjust spacing between menu items*/
+.primary-navigation li {
+	padding-right: 20px!important;
+}
+.primary-navigation li:last-child {
+	margin-right: 0px !important;
+}
+
+/*adjust visibility of slide in menu*/
+.slide-in-menu-container {
+	visibility: hidden !important;
+}
+.slide-in-menu-container.slide-in-menu {
+	visibility: visible !important;
+}
+
+/*display above navigation promotion bar only on homepage*/
+.promo-bar {
+	display: none !important;
+}
+
+body.home .promo-bar {
+	display: block !important;
+}
+
+.promo-bar-audio .mejs-time-handle-content {
+	background-color: #3b3b3b !important;
+	border-color: #3b3b3b !important;
+}
+
+@media only screen and (max-width: 980px){
+	.promo-bar {
+		display: none !important;}
+}
+
+/**************/
+/*** FOOTER ***/
+/**************/
+/*mobile footer menu*/
+@media only screen and (max-width: 980px){
+
+.mobile-menu .et_pb_menu .et_pb_mobile_menu_upwards .et_mobile_menu, .et_pb_fullwidth_menu .et_pb_mobile_menu_upwards .et_mobile_menu {
+    top: auto;
+    bottom: 100%;
+    width: auto !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;}
+}
+	
+/*center instagram feed*/
+    footer #instagram .et_pb_gallery_items{
+      display: flex;
+    justify-content: center; 
+}
+	 
+
+/*intsagram feed mobile*/
+
+	/* Set the image widths */
+.mobile-instagram .et_pb_gallery_grid .et_pb_gallery_item,
+.et_pb_gallery_grid .column_width,
+.et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.portrait img
+{
+    width: 33.3% !important;
+}
+.mobile-instagram .et_pb_gallery_grid .et_pb_gallery_image img
+{
+    min-width: 33.3% !important;
+}
+
+/* Set the image heights */
+.mobile-instagram .et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.landscape img
+{
+    height: 33.3% !important;
+}
+.mobile-instagram .et_pb_gallery_grid .et_pb_gallery_image img
+{
+    min-height: 33.3% !important;
+}
+
+/* Set the spacing between images */
+.mobile-instagram .et_pb_gallery_grid .gutter_width { width: 0px; }
+.mobile-instagram  .et_pb_gallery_grid .et_pb_gallery_item { margin-bottom:0px !important; }
+
+.mobile-instagram  .et_pb_gallery_grid .et_pb_gallery_item { clear:none !important; }
+.mobile-instagram  .et_pb_gallery_grid .et_pb_gallery_item:nth-child(3n) { margin-right:0px !important; }
+.mobile-instagram  .et_pb_gallery_grid .et_pb_gallery_item:nth-child(3n+1) { clear:both !important; }
+.mobile-instagram  .et_pb_gallery_grid .et_pb_gallery_item { margin-right:0px !important; }
+.mobile-instagram  .et_pb_gallery_grid .et_pb_gallery_image img { min-height: 0px !important; }
+.mobile-instagram  .et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.landscape img{
+    height: auto !important;}
+
+
+/*intsagram feed tablet*/
+
+	/* Set the image widths */
+.tablet-instagram .et_pb_gallery_grid .et_pb_gallery_item,
+.et_pb_gallery_grid .column_width,
+.et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.portrait img
+{
+    width: 16.6% !important;
+}
+.mobile-instagram .et_pb_gallery_grid .et_pb_gallery_image img
+{
+    min-width: 16.6% !important;
+}
+
+/* Set the image heights */
+.tablet-instagram .et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.landscape img
+{
+    height: 16.6% !important;
+}
+.tablet-instagram .et_pb_gallery_grid .et_pb_gallery_image img
+{
+    min-height: 16.6% !important;
+}
+
+/* Set the spacing between images */
+.tablet-instagram .et_pb_gallery_grid .gutter_width { width: 0px; }
+.tablet-instagram  .et_pb_gallery_grid .et_pb_gallery_item { margin-bottom:0px !important; }
+
+.tablet-instagram  .et_pb_gallery_grid .et_pb_gallery_item { clear:none !important; }
+.tablet-instagram  .et_pb_gallery_grid .et_pb_gallery_item:nth-child(6n) { margin-right:0px !important; }
+.tablet-instagram  .et_pb_gallery_grid .et_pb_gallery_item:nth-child(6n+1) { clear:both !important; }
+.tablet-instagram  .et_pb_gallery_grid .et_pb_gallery_item { margin-right:0px !important; }
+.tablet-instagram  .et_pb_gallery_grid .et_pb_gallery_image img { min-height: 0px !important; }
+.tablet-instagram  .et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.landscape img{
+    height: auto !important;}
+
+
+/*instagram feed desktop*/
+/* Set the image widths */
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_item,
+.et_pb_gallery_grid .column_width,
+.et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.portrait img
+{
+    width: 115px !important;
+}
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_image img
+{
+    min-width: 115px !important;
+}
+
+/* Set the image heights */
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.landscape img
+{
+    height: 115px !important;
+}
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_image img
+{
+    min-height: 115px !important;
+}
+
+/* Set the spacing between images */
+.instagram-footer .et_pb_gallery_grid .gutter_width { width: 0px; }
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_item { margin-bottom:0px !important; }
+
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_item { clear:none !important; }
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_item:nth-child(11n) { margin-right:0 !important; }
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_item:nth-child(11n+1) { clear:both !important; }
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_item { margin-right:0px !important; }
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_image img { min-height: 0 !important; }
+.instagram-footer .et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.landscape img{
+    height: auto !important;
+}
+
+
+/**********************/
+/*** CONTACT FORM  ****/
+/**********************/
+
+
+/********************/
+/*** OPT IN FORMS ***/
+/********************/
+/*newsletter pop up*/
+.ragnar_popups_6 .et_pb_row {
+transform: none !important;
+}
+
+
+
+/*******************/
+/*** HOME PAGE  ****/
+/*******************/
+
+/*about lindsay section*/
+body .freddie_song_for_lennon_content .et_pb_promo.cta_vertical_title .et_pb_promo_description h2:before {
+    color: #92DDDB !important;
+}
+
+body .freddie_song_for_lennon_content .et_pb_promo.cta_vertical_title .et_pb_promo_description h2:after {
+    color: #92DDDB !important;
+}
+
+.freddie_song_for_lennon_content .et_pb_promo h2 {
+    font-family: 'ProximaNovaRegular', sans-serif !important;
+	text-transform: uppercase;
+}
+
+.freddie_song_for_lennon_content .image_row .et_pb_promo h2 {
+    font-family: 'FreightBigProBlackRegular', serif !important;
+	text-transform: none;
+	letter-spacing: 0 !important;
+}
+
+
+body .freddie_song_for_lennon_content .et_pb_promo .et_pb_promo_description p {
+    font-family: 'FreightBigProBookItalic',serif !important;
+    font-weight: 400;
+    color: #38383b!important;
+    font-size: 30px;
+}
+
+/*lindsay video section*/
+body .freddie_stealin_video_content .et_pb_video .et_pb_video_overlay:before {
+    content:'My Story';
+	font-family: 'ProximaNovaRegular',sans-serif !important;
+	font-weight: 600 !important;
+	text-transform: uppercase;
+	color: #38383b !important;
+}
+
+body .freddie_stealin_video_content .et_pb_video .et_pb_video_overlay a.et_pb_video_play:before {
+    background-color: #92dddb !important;
+}
+
+.freddie_stealin_video_content .et_pb_video .et_pb_video_overlay a.et_pb_video_play:after {
+    border-color: #92dddb !important;
+}
+
+body .freddie_stealin_video_content .et_pb_promo.cta_vertical_title .et_pb_promo_description h2:before {
+    color: #92dddb !important;
+}
+
+body.ie .freddie_stealin_video_content .et_pb_promo.cta_vertical_title .et_pb_promo_description h2:after {
+    color: #92dddb !important;
+}
+
+body .freddie_stealin_video_content .et_pb_promo h2 {
+    font-family: 'ProximaNovaRegular',sans-serif !important;
+    text-transform: uppercase;
+	color: #38383b !important;
+}
+
+/*testimonial slider*/
+body .freddie_sweet_lady_slider .et_pb_slider .et_pb_slide .et_pb_slide_description:after,.freddie_sweet_lady_slider .et_pb_slider .et_pb_slide .et_pb_slide_description:before {
+    color: #92DDDB !important;
+}
+body .freddie_sweet_lady_slider .et_pb_slider .et_pb_slide .et_pb_slide_description:before {
+    color: #92dddb !important;
+}
+
+body .freddie_sweet_lady_slider .et_pb_slider .et-pb-slider-arrows a.et-pb-arrow-next {
+    color: #38383b !important;
+}
+
+body .freddie_sweet_lady_slider .et_pb_slider .et-pb-controllers a {
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    color: #38383b !important;
+}
+
+body .freddie_sweet_lady_slider .et_pb_slider .et-pb-controllers a.et-pb-active-control {
+    color: #92dddb !important;
+}
+
+body .freddie_sweet_lady_slider .et_pb_slider .et-pb-controllers a:hover,.freddie_sweet_lady_slider .et_pb_slider .et-pb-controllers a.et-pb-active-control {
+    color: #92DDDB !important;
+}
+
+
+
+/******************/
+/*** ABOUT PAGE ***/
+/******************/
+/*parallax image*/
+.parahacks .et_parallax_bg {
+    background-position: center -100px !important;
+}
+
+/* CTA Section */
+body .tina_sometimes_content .et_pb_promo .et_pb_promo_description h2.et_pb_module_header:before {
+	color: #38383b !important;
+	font-family: 'FreightBigProBlackRegular', serif !important;}
+
+.tina_sometimes_content .et_pb_promo .et_pb_promo_description h2.et_pb_module_header:after {
+	background: #92DDDB !important;}
+
+body .tina_sometimes_content .et_pb_promo .et_pb_promo_description h3 {
+    color: #38383b !important;
+	font-family: 'FreightBigProBookItalic',serif;
+	font-size: 30px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0.3px;
+	line-height: 120%;
+	text-transform: none;}
+
+
+/*Oracle Deck Product Section*/
+ 	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h4 {
+        font-size:30px !important;
+		font-family: 'FreightBigProBlackRegular',serif !important;
+		color: #38383b !important;
+}
+
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h5 {
+        font-size:24px !important;
+		font-family: 'FreightBigProBookItalic',serif !important;
+		color: #38383b !important;
+		line-height: 120%;
+}
+
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_image:before {
+    	background-color: #3b3b3b !important;
+}
+
+
+/*******************************/
+/*** LEARN WITH LINDSAY PAGE ***/
+/*******************************/
+/*video section*/
+body .impi_123_video_content .et_pb_column .et_pb_blurb:hover h4.et_pb_module_header {
+    background-color: #38383b !important;
+}
+
+/*courses more info - accordians*/
+.courses-more .et_pb_toggle_title:before {
+	right: 100% !important;   
+	content: "\e04c";
+   	transition: all .3s ease-in-out;
+}
+
+.courses-more .et_pb_toggle_open .et_pb_toggle_title:before {
+	right: 100% !important;   
+	content: "\e04c";
+   	transform: rotate(180deg);
+}
+
+.courses-more .et_pb_toggle_open .et_pb_toggle_title:before {
+	right: 100% !important;
+	display: block !important;
+	content: "\e04f";
+}
+
+.courses-more .et_pb_toggle.et_pb_toggle h5 {
+	padding-left: 10px;
+}
+
+/*3 opt-ins section*/
+body .freddie_good_company_blurbs .et_pb_promo .et_pb_promo_description h2:before {
+    color: #92dddb !important;
+	writing-mode: vertical-rl;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    transform-origin: center center;
+    transform: rotate(180deg);
+    padding: 0!important;
+}
+
+.freddie_good_company_blurbs .et_pb_promo .et_pb_button_wrapper .et_pb_button .button_circle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #92dddb !important;
+    border-left-color: transparent !important;
+    transition: .3s;
+    left: 0;
+}
+
+.freddie_good_company_blurbs .et_pb_promo .et_pb_button_wrapper .et_pb_button .button_circle.hover {
+    transform: translate(0,-50%) rotate(-90deg);
+    border-color: transparent !important;
+    border-left-color: #92dddb !important;
+}
+
+
+/*student testimonials*/
+body .tina_siamese_testimonial .student-testimonials .et_pb_slide {
+    background-color: #fff !important;
+    padding: 0 !important;
+}
+
+/*membership section*/
+body .tina_content_universe .et_pb_promo {
+	padding-left: 30px !important;
+}
+
+
+
+/*blog feed*/
+body .freddie_hot_and_cold_blog .et_pb_posts .et_pb_post a.more-link:after {
+    color: #38383b !important;
+}
+
+body .freddie_hot_and_cold_blog .et_pb_posts .et_pb_post {
+    background-color: #ffffff !important;
+}
+
+.freddie_hot_and_cold_blog .et_pb_posts .et_pb_post:before {
+    color: #92dddb !important;
+}
+
+.freddie_hot_and_cold_blog .et_pb_posts .et_pb_post a.more-link {
+    color: #B1E0E2 !important;
+}
+
+.freddie_hot_and_cold_blog .et_pb_posts .et_pb_post a.more-link .left:before,.freddie_hot_and_cold_blog .et_pb_posts .et_pb_post a.more-link .right:before,.freddie_hot_and_cold_blog .et_pb_posts .et_pb_post a.more-link .center {
+    background: #B1E0E2 !important;
+}
+
+
+
+/**********************************/
+/*** READINGS WITH LINDSAY PAGE ***/
+/**********************************/
+/*testimonials slider*/
+body .tina_siamese_testimonial .et_pb_slide_content p strong {
+    color: #38383b !important;
+}
+
+body .tina_siamese_testimonial .et_pb_slide {
+    background-color: rgba(177,224,226,0.3) !important;
+}
+
+/*upcoming events accordian*/
+.tina_accordion_common_sense .et_pb_toggle_content:before {
+    height: 2px !important;
+    background-color: #38383b !important;
+}
+
+body .tina_accordion_common_sense .et_pb_toggle .image_box {
+    background-color: #fff !important;
+}
+
+.tina_accordion_common_sense .et_pb_toggle_content a {
+    background-color: #38383b !important;
+    border-radius: 0px !important;
+	border: 2px solid !important;
+	border-color: #38383b !important;
+}
+
+body .tina_accordion_common_sense .et_pb_toggle_content a:hover {
+    background-color: #fff !important;
+    color: #38383b !important;
+	border: 2px solid !important;
+	border-color: #38383b !important;
+}
+
+/*events video*/
+body .freddie_stealin_video_content .events-play-button .et_pb_video .et_pb_video_overlay:before {
+  content:'Experience an Event' !important;
+  font-family: 'ProximaNovaRegular',sans-serif !important;
+	font-weight: 600 !important;
+	text-transform: uppercase;
+	color: #38383b !important;
+}
+
+/*FAQs Accordian*/
+.tina_accordion_anybody .et_pb_toggle:after {
+    background-color: #92DDDB !important;
+}
+
+.tina_accordion_anybody .et_pb_toggle .et_pb_toggle_title:after {
+    color: #92DDDB !important;
+}
+
+.tina_accordion_anybody .et_pb_toggle_close:after {
+    background: #92DDDB !important;
+}
+
+.tina_accordion_anybody .et_pb_toggle_open:after {
+    background: #92DDDB !important;
+}
+
+.tina_accordion_anybody .et_pb_toggle_open .et_pb_toggle_content:before {
+    color: #92DDDB !important;
+}
+
+/********************/
+/*** PODCAST PAGE ***/
+/********************/
+/* featured episodes */
+.freddie_song_slider svg.svg2 path {
+    stroke: #efefef !important;
+}
+
+.freddie_song_slider svg.svg1 path {
+    stroke: #38383b !important;
+}
+
+.freddie_song_slider svg.svg3 path {
+    stroke: #92DDDB !important;
+}
+
+.freddie_song_slider .et_pb_audio_module .et_pb_audio_cover_art:after {
+    background-color: #fff !important;
+    opacity: .5;
+}
+body .freddie_song_slider .et_pb_audio_module .et_audio_container .mejs-button.mejs-volume-button.mejs-unmute button:before {
+    color: #92DDDB !important;
+}
+
+body .freddie_song_slider .slide_buttons_and_number a:hover:before {
+    color: #92DDDB !important;
+}
+
+body .freddie_song_slider .et_pb_audio_module .mejs-time-handle-content {
+    background-color: #92DDDB !important;
+    border: 3px solid #92DDDB !important;
+}
+
+.freddie_song_slider .et_pb_audio_module .mejs-time.mejs-duration-container .mejs-duration {
+    font-size: 15px !important;
+    font-family: 'ProximaNovaRegular' !important;
+    font-weight: 500 !important;
+}
+
+.freddie_song_slider .slide_buttons_and_number a:before {
+    font-size: 25px;
+    color: #38383b !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    font-family: 'ProximaNovaRegular' !important;
+}
+
+.freddie_song_slider .slide_buttons_and_number span {
+    font-size: 75px;
+    color: #38383b !important;
+    font-weight: 500 !important;
+    font-family: 'ProximaNovaRegular' !important;
+}
+
+.freddie_song_slider .et_pb_audio_module .top_play_button:before {
+    color: #fff !important;
+    background-color: #92DDDB !important;
+}
+
+
+/*YouTube Featured Episode Section*/
+.freddie_our_films_content .et_pb_button_module_wrapper .et_pb_button.freddie_button_seaside .hover_bg_color,.freddie_our_films_content .et_pb_button_module_wrapper .et_pb_button.freddie_button_seaside .bg_color {
+    background-color: #92dddb !important;
+}
+
+.freddie_our_films_content .et_pb_button_module_wrapper .et_pb_button.freddie_button_seaside .bg_color_big {
+    background-color: #ffffff !important;
+}
+
+.freddie_our_films_content .et_pb_button_module_wrapper .et_pb_button.freddie_button_seaside .icon:before {
+    color: #ffffff !important;
+}
+
+.freddie_our_films_content .et_pb_blurb .et-pb-icon {
+    font-size: 26px;
+    color: #ffff;
+    background-color: #38383b;
+    border-color: #38383b;
+}
+
+
+/*testimonial slider*/
+#page-container .freddie_frutti_testimonial .podcast-review .et_pb_slider .et-pb-slider-arrows {
+    background-color: #38383b !important;
+}
+
+#page-container .freddie_frutti_testimonial .podcast-review .et_pb_slider .et-pb-slider-arrows a span:not(.number) {
+    display: block !important;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'ProximaNovaRegular' !important;
+  }
+
+#page-container .freddie_frutti_testimonial .podcast-review .et_pb_slider .et-pb-slider-arrows a:hover span:not(.number) {
+    color: #92DDDB !important;
+  }
+
+#page-container .freddie_frutti_testimonial .podcast-review .et_pb_slider .et-pb-slider-arrows span.number {
+    font-size: 60px;
+    color: #fff;      
+    font-weight: 500;
+    font-family: 'ProximaNovaRegular' !important;
+}
+
+
+/*************************/
+/*** TESTIMONIALS PAGE ***/
+/*************************/
+
+/* hero slider*/
+.freddie_testimonial_back_to_humans .et_pb_slider .et_pb_container .et_pb_slide_image:after {
+    border-color: #92dddb !important;
+}
+
+.freddie_testimonial_back_to_humans .et_pb_slider .et_pb_container .et_pb_slide_image:before {
+    box-shadow: 0 0 0 790px #fff !important;
+}
+
+body .freddie_testimonial_back_to_humans .et_pb_slide.et-pb-active-slide .et_pb_slide_description:before {
+    content: "Student Testimonials" !important;
+    display: block;
+    font-family: 'FreightBigProBlackRegular', serif !important;
+    font-size: 35px !important;
+    color: #38383b !important;
+	text-transform: none !important;
+}
+
+.freddie_testimonial_back_to_humans .et_pb_slide.et-pb-active-slide .et_pb_slide_description:after {
+    color: #92dddb !important;
+}
+
+
+/*adjust spacing between menu items*/
+.quick-links li {
+	padding-right: 20px!important;
+}
+
+.quick-links li:last-child {
+	margin-right: 0px !important;
+}
+
+.tina_seek_call_to_action .et_pb_button .button_arrow_icon .arrow:after, .tina_seek_call_to_action .et_pb_button .button_arrow_icon .arrow:before {
+    background-color: #38383b !important;
+}
+
+.tina_seek_call_to_action .et_pb_button .button_arrow_icon {
+    background-color: #38383b !important;
+}
+
+.tina_seek_call_to_action:hover .et_pb_text {
+    color: #000 !important
+}
+/*readings testimonals section*/
+.b3_archive_archive_pagination {
+	display: none;
+}
+
+/*events video*/
+.freddie_my_body_testimonial .et_pb_video .et_pb_video_overlay a.et_pb_video_play:after {
+    border-color: #92dddb !important;
+}
+
+body .freddie_my_body_testimonial .et_pb_video .et_pb_video_overlay a.et_pb_video_play:before {
+    content: "E" !important;
+    background-color: #92dddb !important;
+}
+
+
+/*podcast reviews*/
+.freddie_breakthru_testimonails .et_pb_slider .et-pb-slider-arrows a {
+    color: #38383b !important;
+}
+
+.freddie_breakthru_testimonails .et_pb_slider .et-pb-slider-arrows a:hover {
+    background-color: #000 !important;
+    color: #38383b !important;
+}
+
+.freddie_seven_days_testmonail .et_pb_slide_title:after {
+    border-top: 2px solid #38383b !important;
+}
+
+
+/*****************/
+/*** BLOG PAGE ***/
+/*****************/
+/*featured posts slider*/
+.ragnar_blog_august .et_pb_post_slider .et_pb_slide .et_pb_container .published,.ragnar_blog_august .et_pb_post_slider .et_pb_slide .et_pb_container .categories {
+    font-family: 'Proximanovaregular'!important;
+	font-weight: 500;
+    font-size: 17px !important;
+    background-color: #efefef !important;
+}
+
+.ragnar_blog_august .et_pb_post_slider .et_pb_slide .et_pb_container .categories a {
+    color: #38383b !important;
+}
+
+.ragnar_blog_august .et_pb_post_slider .et_pb_slide .date .published {
+    background-color: #38383b !important;
+}
+
+.ragnar_blog_august .et_pb_post_slider .et-pb-slider-arrows a:hover:before {
+    border-color: #92dddb !important;
+}
+
+.ragnar_blog_august .et_pb_post_slider .et-pb-slider-arrows a:hover:after {
+    background-color: #92dddb !important;
+}
+
+/*filterable blog posts section*/
+.ragnar_blog_ake article .post-meta .published {
+    background: #38383b !important;
+}
+
+body .ragnar_blog_ake article .post-meta a[rel="tag"] {
+    color: #38383b !important;
+}
+
+body .ragnar_blog_ake article .post-meta a[rel="tag"]:hover {
+    color: #000 !important;
+}
+
+.ragnar_blog_ake article:after {
+    height: 2px !important;
+    background-color: #92dddb !important;
+}
+
+.ragnar_blog_ake .blog_filter ul li {
+    color: #38383b !important;
+    font-size: 17px !important;
+    font-family: 'Proximanovaregular' !important;
+}
+
+body .ragnar_blog_ake .blog_filter li.active_menu_item span {
+    color: #38383b !important;
+}
+
+body .ragnar_blog_ake .blog_filter li:hover span {
+    color: #000 !important;
+}
+
+.ragnar_blog_ake .post-content p {
+    display: block;
+    height: 10em;
+    overflow: hidden;
+}
+
+/**************************/
+/*** BLOG POST TEMPLATE ***/
+/**************************/
+/*dynamic title font*/
+body .freddie_blog_post_human_body_title h1.entry-title {
+        font-family: 'FreightBigProBookItalic'!important;
+        font-size: 36px !important;
+		letter-spacing: 0.3px !important;
+		color: #38383b !important;
+		font-style: normal !important;
+ }
+
+/*blockquote background*/
+.freddie_blog_post_human_body_post_content .et_pb_text_inner blockquote,.freddie_blog_post_human_body_post_content>blockquote,body.et-tb .freddie_blog_post_human_body_post_content blockquote {
+    background-color: #efefef !important;
+}
+
+/*link hover*/
+.freddie_blog_post_human_body_post_content p a:hover, .freddie_blog_post_human_body_post_content li a:hover, .freddie_blog_post_human_body_author a:hover, .freddie_blog_post_human_body_socials a:hover, .freddie_blog_post_human_body_comments .comment-edit-link:hover, .freddie_blog_post_human_body_comments .logged-in-as a:hover {
+    opacity: 1;
+}
+
+/*photo caption*/
+body .freddie_blog_post_human_body_post_content .wp-caption p.wp-caption-text {
+    font-size: 15px;
+    line-height: 26px;
+    color: #38383b !important;
+    font-family: "Proximanovaregular" !important;
+    font-weight: 400;
+    background: #efefef !important;
+    padding: 32px 37px !important;
+    position: absolute;
+    top: 50%;
+    left: 120% !important;
+    transform: translate(-50%,-50%);
+    width: 100% !important;
+}
+
+/*comments*/
+.freddie_blog_post_human_body_comments #comments:before {
+    color: #38383b !important;
+}
+
+.freddie_blog_post_human_body_comments .logged-in-as a {
+    color: #38383b !important;
+}
+
+body #page-container .freddie_blog_post_human_body_comments .comment_postinfo:after {
+    border-right-color: #efefef !important;
+}
+
+body .et_pb_comments_0_tb_body #commentform textarea, .et_pb_comments_0_tb_body #commentform input[type='text'], .et_pb_comments_0_tb_body #commentform input[type='email'], .et_pb_comments_0_tb_body #commentform input[type='url'] {
+    border-radius: 5px 5px 5px 5px!important;
+    overflow: hidden!important;
+    background-color: #efefef !important;
+    color: #38383b !important;
+}
+
+body .et_pb_comments_0_tb_body #commentform textarea, .et_pb_comments_0_tb_body #commentform input[type='text'], .et_pb_comments_0_tb_body #commentform input[type='email'], .et_pb_comments_0_tb_body #commentform input[type='url'], .et_pb_comments_0_tb_body #commentform label {
+    font-family: 'proximanovaregular' !important;
+}
+
+/**********************/
+/*** RESPONSIVENESS ***/
+/**********************/
+/*** MAKE SITE WIDER ON SMALLER SCREENS ***/
+@media only screen and (max-width: 980px) {
+.et_pb_row {
+width: 95%; /*** you might need !important ***/
+}
+}
+
+
+/*tiny old phones*/
+@media only screen and (max-width: 360px) {
+	body .about-backstory .et_pb_column {
+	margin-bottom: 0px !important;
+	width: 75% !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h4 {
+		font-size:24px !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h5 {
+		font-size:20px !important;}
+
+body .tina_siamese_testimonial .student-testimonials .et_pb_slide {
+    background-color: #efefef !important;
+	padding: 0 !important;}
+	
+	body .freddie_blog_post_human_body_title h1.entry-title {
+		font-size: 22px !important;}
+		
+	body .freddie_blog_post_human_body_post_content .wp-caption p.wp-caption-text {
+		display: none;}
+}
+
+/*mobile & max-mobile*/
+@media only screen and (max-width: 765px) and (min-width: 375px){
+	
+	h1 {
+		font-size: 30px !important;
+		letter-spacing: -2px !important;}
+	
+	body .about-backstory .et_pb_column {
+	margin-bottom: 0px !important;
+	width: 75% !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h4 {
+		font-size:24px !important;}
+	
+	.freddie_person_module_greatest_treasure .et_pb_team_member .et_pb_team_member_description h5 {
+		font-size:20px !important;}
+	
+	body .freddie_stealin_video_content .et_pb_video .et_pb_video_overlay:before {
+    font-size: 12px !important;
+    margin-top: 41px !important;}
+	
+	body .freddie_blog_post_human_body_title h1.entry-title {
+    font-size: 22px !important;
+		letter-spacing: 0.3px !important;}
+	
+	body .freddie_blog_post_human_body_post_content .wp-caption p.wp-caption-text {
+		display: none;}
+
+}
+
+
+
+
+/*tablets*/
+@media only screen and (max-width: 980px) {
+	
+	.parahacks .et_parallax_bg {
+    background-position: center 0px!important;}
+	
+	body .freddie_song_for_lennon_content .et_pb_promo .et_pb_promo_description p {
+    font-family: 'FreightBigProBookItalic',serif !important;
+    font-weight: 400;
+    color: #38383b!important;
+    font-size: 22px;}
+	
+	.about-backstory .et_pb_column {
+	margin-bottom: 0px !important;
+		width: 47% !important;}
+	
+    .tina_sometimes_content .et_pb_promo .et_pb_promo_description h2 {
+        font-size:24px !important;}
+	
+	body .tina_sometimes_content .et_pb_promo .et_pb_promo_description h3 {
+        font-size:22px !important;}
+	
+		.freddie_make_things_cta .et_pb_column_2_3 {
+        padding-top: 30px !important;}
+	
+body .tina_siamese_testimonial .student-testimonials .et_pb_slide {
+    background-color: #efefef !important;
+	padding: 0 !important;}
+	
+	body .freddie_blog_post_human_body_post_content .wp-caption p.wp-caption-text {
+		display: none;}
+
+}
+
+
+/*ipad pro 12 inch + landscape ipads*/
+@media only screen and (max-width: 1025px) and (min-width: 835px) {
+	.home-cta .et_pb_blurb .et_pb_main_blurb_image .et_pb_image_wrap {
+		width: 100%;}
+	
+	
+	.mission-statement .et_pb_row {
+		width: 80% !important;
+	}
+	
+	.podcast-cta .et_pb_code {
+		right: -1vw;
+		top: 12vw;
+	}
+	.podcast-cta .et_pb_column_12 {
+		padding-top: 4vw;
+	}
+	
+	.podcast-cta h2 {
+		font-size: 24px !important;
+	}
+	
+	.podcast-cta p {
+		font-size: 15px;
+		line-height: 160%;
+	}
+	
+	.podcast-cta .birdandthorn p{
+		font-size: 96px !important;
+	}
+	
+	body .about-backstory .et_pb_column {
+		width: 47% !important;}
+	
+	body .tina_sometimes_content .et_pb_promo .et_pb_promo_description h3 {
+        font-size:22px !important;}
+	
+.ragnar_blog_ake .post-content p {
+    display: block;
+    height: 10em;
+    overflow: hidden;
+}
+	
+.ragnar_blog_ake .et_pb_post .post-meta a, .et_pb_portfolio_item .post-meta a {
+	font-size: 14px !important;}
+
+
+footer #instagram {
+	overflow: hidden;
+}
+}
+
+
+/*large laptops & desktop*/
+
+@media only screen and (max-width: 1390px) and (min-width: 981px) {
+body .freddie_sweet_lady_slider .et_pb_slider .et_pb_slide .et_pb_slide_description .et_pb_slide_title {
+    font-size: 24px !important;}
+	
+	.tina_sometimes_content .et_pb_promo .et_pb_promo_description h2 {
+        font-size: 24px !important;}
+	
+	.tina_sometimes_content .et_pb_promo .cta_content {
+    	margin-right: -48px !important;}
+	
+}
+
+@media only screen and (max-width: 1500px) {
+   body .freddie_blog_post_human_body_main_content_section.et_pb_section {
+        padding-top:15px !important;
+    }
+}
